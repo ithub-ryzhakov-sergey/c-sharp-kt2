@@ -1,17 +1,17 @@
 namespace App.Topics.Indexers.T1_1_IntList;
 
-public class IntList1
+public class IntList
 {
     private int[] _items;
     private int _count;
 
-    public IntList1()
+    public IntList()
     {
         _items = new int[4]; // Начальная емкость
         _count = 0;
     }
 
-    public IntList1(int initialCapacity)
+    public IntList(int initialCapacity)
     {
         if (initialCapacity < 0)
             throw new ArgumentOutOfRangeException(nameof(initialCapacity), "Capacity cannot be negative");
