@@ -27,12 +27,9 @@
       /T1_1_IntList
       /T1_2_KeyValueStore
       /T1_3_Matrix2D
-      /T1_4_SparseMatrix            # (*)
     /Operators
       /T2_1_Money
       /T2_2_VersionLite
-      /T2_3_Maybe
-      /T2_4_BigRational            # (*)
 /App.Tests
   # Зеркальная структура с тестами на каждую задачу
 /src
