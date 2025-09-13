@@ -11,9 +11,46 @@ namespace App.Topics.Indexers.T1_2_KeyValueStore;
 
 public class KeyValueStore
 {
-    // Студенту:
-    // 1) Добавьте внутренние структуры данных (например, два словаря: по int и по string).
-    // 2) Реализуйте перегруженные индексаторы this[int id] и this[string key].
-    // 3) Соблюдайте требования к исключениям (KeyNotFoundException, ArgumentNullException).
-    // 4) Добавьте дополнительные члены по необходимости.
+    private readonly Dictionary<int, string> digits = new();
+    private readonly Dictionary<string, string> str = new();
+    private int newID = 1;
+
+    public string this[int id]
+    {
+        get
+        {
+            if (!this.digits.TryGetValue(id, out var value))
+                throw new KeyNotFoundException();
+            return value;
+        }
+
+        set
+        {
+            if (value == null)
+                throw new ArgumentNullException(nameof(value));
+            this.digits[id] = value;
+        }
+    }
+
+    public string this[string key]
+    {
+        get
+        {
+            if (key == null)
+                throw new ArgumentNullException(nameof(key));
+
+            if (!this.str.TryGetValue(key, out var value))
+                throw new KeyNotFoundException();
+            return value;
+        }
+
+        set
+        {
+            if (key == null)
+                throw new ArgumentNullException(nameof(key));
+            if (value == null)
+                throw new ArgumentNullException(nameof(value));
+            this.str[key] = value;
+        }
+    }
 }
