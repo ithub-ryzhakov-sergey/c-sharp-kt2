@@ -19,4 +19,54 @@ public class IntList
     // 3) Реализуйте индексатор this[int index] с семантикой, описанной выше.
     // 4) Добавьте конструктор(ы) при необходимости.
     // Примечание: сейчас код преднамеренно пустой — требуется самостоятельная реализация.
+
+    private List<int> lst;
+    private int count;
+
+    public IntList()
+    {
+        this.lst = new List<int>();
+        this.count = 0;
+    }
+
+    public IntList(int digits)
+    {
+        if (digits < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(digits), "digits no -");
+        }
+
+        this.lst = new List<int>(capacity: digits);
+        this.count = 0;
+    }
+
+    public int Count => this.count;
+
+    public int this[int index]
+    {
+        get
+        {
+            if ((index < 0) || (index >= this.count))
+                throw new ArgumentOutOfRangeException(nameof(index), "нет в диапазоне");
+            return this.lst[index];
+            
+        }
+
+        set
+        {
+            if ((index < 0) || (index > this.count))
+                throw new ArgumentOutOfRangeException(nameof(index), "нет в диапазоне");
+
+            if (index == count)
+            {
+                this.lst.Add(value);
+                count++;
+            }
+            else
+            {
+                this.lst[index] = value;
+            }
+        }                       
+    }
+    
 }
