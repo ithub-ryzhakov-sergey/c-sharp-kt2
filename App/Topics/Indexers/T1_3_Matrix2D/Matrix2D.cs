@@ -12,6 +12,7 @@ namespace App.Topics.Indexers.T1_3_Matrix2D;
 public class Matrix2D
 {
     // Студенту:
+    
     // 1) Добавьте приватное хранилище (одномерный массив) и размеры.
     // 2) Реализуйте конструктор Matrix2D(int rows, int cols) с проверкой > 0.
     // 3) Реализуйте свойства Rows, Cols.

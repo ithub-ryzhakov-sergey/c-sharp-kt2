@@ -1,8 +1,8 @@
 // using App.Topics.Indexers.T1_3_Matrix2D;
 // using NUnit.Framework;
-//
+
 // namespace App.Tests.Topics.Indexers.T1_3_Matrix2D;
-//
+
 // public class Matrix2DTests
 // {
 //     [Test]
@@ -13,7 +13,7 @@
 //         Assert.Throws<ArgumentOutOfRangeException>(() => new Matrix2D(-1, 3));
 //         Assert.Throws<ArgumentOutOfRangeException>(() => new Matrix2D(3, -1));
 //     }
-//
+
 //     [Test]
 //     public void SetGet_WithinBounds_Works()
 //     {
@@ -28,7 +28,7 @@
 //             Assert.That(m[1,2], Is.EqualTo(7));
 //         });
 //     }
-//
+
 //     [Test]
 //     public void Get_OutOfBounds_Throws()
 //     {
@@ -38,7 +38,7 @@
 //         Assert.Throws<ArgumentOutOfRangeException>(() => { var _ = m[2, 0]; });
 //         Assert.Throws<ArgumentOutOfRangeException>(() => { var _ = m[0, 3]; });
 //     }
-//
+
 //     [Test]
 //     public void Set_OutOfBounds_Throws()
 //     {
