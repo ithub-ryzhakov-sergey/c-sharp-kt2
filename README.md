@@ -95,8 +95,8 @@
 <details>
 <summary><code>T2.2_VersionLite</code> — операторы <, >, <=, >=</summary>
 
-- Класс с read-only свойствами `Major`, `Minor`, `Patch`.
-- Реализуйте `IComparable<VersionLite>` и операторы сравнения в лексикографическом порядке.
+- Класс с read-only int свойствами `Major`, `Minor`, `Patch`.
+- Реализуйте `IComparable<VersionLite>` и операторы сравнения. Сначала сравниваем Major, потом Minor, потом Patch. Например "22.01.56" > "22.01.20" ("{Major}.{Minor}.{Patch}")
 - Конструктор: значения неотрицательны, иначе `ArgumentOutOfRangeException`.
 </details>
 
