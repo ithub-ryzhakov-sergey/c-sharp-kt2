@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{20A4B8EB-9194-489D-A766-AFD46CAC8062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Tests", "App.Tests\App.Tests.csproj", "{EC6F50BA-393F-4139-AB41-F77E8D88ED18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A4B8EB-9194-489D-A766-AFD46CAC8062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A4B8EB-9194-489D-A766-AFD46CAC8062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A4B8EB-9194-489D-A766-AFD46CAC8062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A4B8EB-9194-489D-A766-AFD46CAC8062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6F50BA-393F-4139-AB41-F77E8D88ED18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6F50BA-393F-4139-AB41-F77E8D88ED18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6F50BA-393F-4139-AB41-F77E8D88ED18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6F50BA-393F-4139-AB41-F77E8D88ED18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
