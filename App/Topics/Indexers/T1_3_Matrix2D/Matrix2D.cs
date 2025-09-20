@@ -9,7 +9,7 @@
 
 namespace App.Topics.Indexers.T1_3_Matrix2D;
 
-public class Matrix2D
+public class Matrix3D
 {
     // Студенту:
     // 1) Добавьте приватное хранилище (одномерный массив) и размеры.
